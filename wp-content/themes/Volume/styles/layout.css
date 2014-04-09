@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+LAYOUT: Two-Column (Right)
+DESCRIPTION: Two-column fluid layout with one sidebars right of content
+*/
+
+#container {
+
+float: left;
+margin: 0 -200px 0 0;
+width: 800px;
+margin-left:25%
+
+}
+#content {
+
+margin: 0 0 0 0;
+}
+#primary, #secondary {
+float: right;
+margin-right:10%;
+overflow: hidden;
+width: 30%;
+position:relative;
+
+}
+#secondary {
+clear: right;
+}
+#footer {
+clear: both;
+width: 100%;
+}
+
+
+

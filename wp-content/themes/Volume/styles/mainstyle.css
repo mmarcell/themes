@@ -1,0 +1,386 @@
+/* CSS Document */
+/*FONTS*/
+
+@font-face {
+font-family: 'HoneyScriptLight';
+src: local('fonts/HoneyScript-Light.ttf')
+src: url('honeyscript-light-webfont.eot');
+src: url('honeyscript-light-webfont.eot?#iefix') format('embedded-opentype'),
+url('honeyscript-light-webfont.woff') format('woff'),
+url('honeyscript-light-webfont.ttf') format('truetype'),
+url('honeyscript-light-webfont.svg#HoneyScriptLight') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+
+
+
+@font-face {
+font-family: 'HoneyScriptSemiBold';
+src: local('fonts/HoneyScript-SemiBold.ttf')
+src: url('honeyscript-semibold-webfont.eot');
+src: url('honeyscript-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+url('honeyscript-semibold-webfont.woff') format('woff'),
+url('honeyscript-semibold-webfont.ttf') format('truetype'),
+url('honeyscript-semibold-webfont.svg#HoneyScriptSemiBold') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+/*BODY*/
+
+html, body {
+height:100%;
+max-height:768px;
+min-height:768px;
+/*min-width:922px;*/
+background-image:url(../images/background.jpg);
+}
+
+.wrapper {
+margin-right:auto;
+margin-left:auto;
+width:922px;
+position:relative;
+max-height: 768px;
+min-height:768px;
+height: auto !important;
+height: 100%;
+top:15px;
+}
+
+
+/*HEADER*/
+#mn_about {
+position:absolute;
+top:0px;
+background-image:url(../images/header.png);
+width:922px;
+height:533px;
+}
+
+#logo {
+background-image:url(../images/Logo_05.png);
+background-repeat:no-repeat;
+background-position:center;
+position:relative;
+margin-left:auto;
+margin-right:auto;
+top:25px;
+height:143px;	
+width:358px;
+}
+
+#about {
+top:140px;
+left:308px;
+position:absolute;
+font-family:"Honey Script", Amatic SC, Vivaldi, Arial;
+font-size:24px;
+text-align:center;
+color: #637987;
+width:300px;
+}
+
+/*SLIDES*/
+#slide1 {
+position:absolute;
+float:left;
+top:115px;
+margin-left:50px;
+}
+
+#slide2 {
+position:absolute;
+float:right;
+top:115px;
+right:0px;
+margin-right:50px;	
+}
+
+
+
+/*MENU*/
+
+.menu{
+position:absolute;
+margin-right:auto;
+margin-left:auto;
+height:245px;
+width:100%;
+bottom:-45px;
+text-align:center;
+list-style:none;
+}
+
+.menu li:hover ul {
+display: block;
+z-index: 100;
+position: absolute;
+top: 50px;
+left: 88px;
+width: 100px;
+}
+
+ul.menu {
+padding-left:0;
+bottom:-5%;
+}
+
+ul.menu ul {
+display:none;
+}
+
+ul.menu li {
+display:inline-block;
+padding-top:19px;
+padding-bottom:16px;
+margin-right:9px;
+margin-left:9px;
+background-image:url(../images/link.png);
+background-position:center;
+background-repeat:no-repeat;
+min-width:90px;
+max-width:90px;
+}
+
+ul.menu li li {
+background-image:none;
+/*background-color:#E6DDC7; */
+padding: 0px;
+}
+
+ul.menu li li a {
+color:#ffffff;
+}
+
+ul.menu li li:hover {
+background-color:#E3D5BB;
+}
+
+ul.menu li a {
+text-align:center;
+display:block;
+min-width:90px;
+max-width:90px;
+overflow:hidden;
+text-decoration:none;
+color:#637987;
+font-size:22px;
+font-weight:bold;
+font-family:"Honey Script", Amatic SC, Vivaldi, Arial;
+}
+
+ul.menu li a:hover {
+color:#999;
+background-color:#E3D5BB;
+}
+
+/*FOOTER*/
+#mn_footer {
+background-image:url(../images/footer.png);
+width:922px;
+height:133px;
+margin: 0 auto 0;
+position:relative;
+bottom:0px;
+clear:both;
+}
+
+#sect_logo {
+position:absolute;
+bottom:0;
+width:246px;
+height:133px;
+background-image:url(../images/Logo2.png);
+background-repeat:no-repeat;
+background-position:center;
+}
+
+#sect_logo:hover {
+background-image:url(../images/Logo2hover.png);	
+}
+
+#sect_comment {
+position:absolute;
+background-image:url(../images/Quote_22.png);
+height:133px;
+width:363px;
+right:314px;
+}
+
+#sect_social {
+
+}
+
+#follow {
+font-family:"Honey Script", Amatic SC, Vivaldi, Arial;
+font-size:24px;
+color:#d1cdc5;
+position:absolute;
+top:20px;
+right:110px;
+}
+
+#btn_1 {
+position:absolute;
+background-image:url(../images/social_23.png);
+background-position:center;
+background-repeat:no-repeat;
+height:133px;
+width:87px;
+float:right;
+right:224px;
+}
+
+#btn_1:hover {
+background-image:url(../images/socialhov_23.png);	
+}
+
+#btn_2 {
+position:absolute;
+background-image:url(../images/social_24.png);
+background-position:center;
+background-repeat:no-repeat;
+height:133px;
+width:48px;
+float:right;
+right:176px;
+}
+
+#btn_2:hover {
+background-image:url(../images/socialhov_24.png);	
+}
+
+#btn_3 {
+position:absolute;
+background-image:url(../images/social_25.png);
+background-position:center;
+background-repeat:no-repeat;
+height:133px;
+width:47px;
+float:right;
+right:129px;
+}
+
+#btn_3:hover {
+background-image:url(../images/socialhov_25.png);	
+}
+
+#btn_4 {
+position:absolute;
+background-image:url(../images/social_26.png);
+background-position:center;
+background-repeat:no-repeat;
+height:133px;
+width:47px;
+float:right;
+right:82px;
+}
+
+#btn_4:hover {
+background-image:url(../images/socialhov_26.png);	
+}
+
+#btn_5 {
+position:absolute;
+background-image:url(../images/social_27.png);
+background-position:center;
+background-repeat:no-repeat;
+height:133px;
+width:52px;
+float:right;
+right:30px;
+}
+
+#btn_5:hover {
+background-image:url(../images/socialhov_27.png);	
+}
+
+
+@media only screen and (max-width: 480px) {
+    
+    html, body {
+        width:320px;
+        clear:both;
+        margin:0 auto;
+    }
+    
+    #about {
+    position:relative;
+    width:100%;
+    margin:0 auto;
+    left: auto;
+    top: auto;
+    margin-top:20px;
+    }
+    
+    p {
+    position:relative;
+    width:100%;
+    margin:0 auto; 
+    }
+    
+    #logo {
+    position:relative;
+    width:100%;
+    margin: 0 auto;
+    text-align:center;
+    display:block;
+    }
+    
+    .wrapper {
+    position:relative;
+    max-width:100%;
+    margin:0;
+    text-align:center;
+    height:100%;
+    min-height: 0;
+    max-height: none;
+    }
+    
+    #mn_about {
+    position:relative;
+    background-image:none;
+    width:320px;
+    margin: 0 auto;
+    }
+    
+    #mn_footer {
+    display:none;
+    }
+    
+    .menu {
+    text-align:center;
+    min-width: 98%;
+    margin: 0 auto;
+    clear: both;
+    bottom:auto;
+    height:220px;
+    padding-bottom:50px;
+    }
+    
+    ul.menu li {
+		display: block;
+		min-width: 95%;
+		clear: both;
+                margin:0 auto;
+                padding:5px;
+                background-image:none;
+                border:1px dashed #6e4c26;
+                background-color:#e7d9bf;
+                margin-bottom:2px;
+    }
+    
+    ul.menu {
+    width:100%;
+    margin: 0 auto;
+    text-align:center;
+    height:auto;
+    }
+    
+    ul.menu li a {
+    margin:0 auto;
+    }
+}

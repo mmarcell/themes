@@ -1,0 +1,670 @@
+@charset "utf-8";
+/* CSS Document */
+/*---------------------ELEMENTS--------------------*/
+html, body {
+height:100%;
+background-image: url(../images/Sand1.jpg);
+}
+
+a {
+text-decoration:none;
+color:#666;
+}
+
+body, input, textarea {
+line-height:1.5;
+color:#111;
+}
+
+body {
+margin-left: auto;
+margin-right: auto;
+}
+
+p, ul, ol, dd, pre {
+margin-bottom: 2.0em;
+}
+
+pre, code {
+font: 12px "Linden Hill";
+line-height: 2.0;
+}
+
+h2 {
+font-family:"Mate SC";
+font-size: 120%; /* Increasing the font size */
+font-weight: lighter;
+margin: 0 0 0.3em;
+}
+
+#nav-above {
+
+}
+
+.navigation {
+padding-bottom:30px;
+}
+
+.nav-previous {
+position:relative;
+float:left;
+font-style: italic;
+font-family: "Poiret One";
+}
+
+.nav-next {
+position:relative;
+float:right;
+font-style: italic;
+font-family: "Poiret One";
+}
+
+/*divider between posts*/
+.post-item-divider {
+margin-top: 5px;
+margin-bottom: 15px;
+/*border-top: 3px dotted #111111;*/
+width: 100%;
+}
+
+/*divider after header*/
+/*.divide {
+border-top: 3px dotted #333;
+width: 50%;
+margin-top: 1px;
+margin-left: auto;
+margin-right: auto;
+}*/
+
+/*--------------------------------------MENU/HEADER--------------------------------------------*/
+#header {
+position: relative;	
+top: 0;
+width: 100%;
+height: 35px;
+margin: 0 auto;
+clear: both;
+border-bottom: 2px groove #666;
+text-align: center;
+text-shadow: 0px 1px 0px #000;
+background-image: url(../images/Fabric1bl.jpg);
+z-index: 9999;
+}
+
+#blog-title {
+float: left;
+margin-bottom: 0;
+margin-left: 5px;
+padding-top: 5px;
+}
+
+#blog-title a {
+font-family: "Linden Hill";
+font-size: 150%;
+color: #ccc;
+}
+
+/************************************OPTIONAL HEADER IMAGE*****************************
+.hdrimg {
+width:980px;
+clear:both;
+margin-left:auto;
+margin-right:auto;
+}
+*/
+
+#access {
+position:absolute;
+line-height:45px;
+left:300px;
+display:block;
+}
+
+.menu {
+max-width:1500px;
+}
+
+.skip-link {
+visibility:hidden;
+left:-9000px;
+}
+
+.menu li:hover {
+background-color:#718296;
+background-image:none;
+}
+
+#access .menu-header ul,
+div.menu ul {
+list-style: none;
+margin-left:10px;
+padding-left:0px;
+padding-right:0px;
+padding-top:0px;
+padding-bottom:0px;
+height:40px;
+position:relative;
+}
+
+#access .menu-header li,
+div.menu li {
+padding-top:0px;
+padding-right:7px;
+padding-left:7px;
+padding-bottom:0px;
+border-left:.5px groove #666;
+border-right:.5px solid #CCC;
+background-color:#333;
+background-image:url(../images/Fabric1bl.jpg);
+float:left;
+position: relative;	
+height: 35px;
+}
+
+#access a {
+display:block;
+float:none;
+color:#CCC;
+text-shadow: 0px 1px 0px #000;
+font-family:"Annie Use Your Telescope";
+font-size:20px;
+}
+
+#access ul ul {
+box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+-moz-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+-webkit-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+display: none;
+position: absolute;
+top: 35px;
+left: 0;
+float: left;
+z-index: 99999;
+margin-left:0px;
+height:auto;
+}
+
+#access ul ul li {
+height:auto;
+background-color:#718296;
+background-image:none;
+}
+
+#access ul ul li:hover {
+background:#fff;
+}
+
+#access ul ul ul {
+left: 100%;
+top: 0;
+}
+
+#access ul ul a {
+line-height: 8px;
+padding: 5px;
+width: 190px;
+height: 15px;
+}
+
+#access ul ul a:hover {
+color:#000000;
+}
+
+#access ul li:hover > ul {
+display: block;
+}
+
+#access ul li.current_page_item > a,
+#access ul li.current-menu-ancestor > a,
+#access ul li.current-menu-item > a,
+#access ul li.current-menu-parent > a {
+color: #fff;
+}
+
+* html #access ul li.current_page_item a,
+* html #access ul li.current-menu-ancestor a,
+* html #access ul li.current-menu-item a,
+* html #access ul li.current-menu-parent a,
+* html #access ul li a:hover {
+color: #fff;
+}
+
+
+/* -------------------------------------LAYOUT-----------------------------------------*/
+
+#wrapper {
+width:90%;
+margin-left:auto;
+margin-right:auto;
+min-height: 100%;
+position:relative;
+margin-top:20px;
+margin-bottom:-100px;
+}
+
+#container {
+float: left;
+margin: 0;
+margin-right:0;
+width:50%;
+margin-left:7.5%;
+}
+
+#content {
+margin: 0 0 0 0;
+}
+
+#p-content {
+background-color:#DFE1E8;
+opacity:0.6;
+filter:alpha(opacity=60);
+border: dashed 1px #8499D9;
+padding:5px;
+}
+
+#primary, #secondary {
+margin: 0;
+float:right;
+margin-right:7.5%;
+margin-left:0;
+margin-top:2%;
+overflow: hidden;
+width:30%;
+position:relative;
+}
+
+#primary a {
+color:#5E6670;
+}
+
+#primary a:hover {
+background-color:#fff;
+border: dashed 1px #8499D9;
+}
+
+.widget-area {
+background-color: #CCC0AF;
+opacity:0.6;
+filter:alpha(opacity=60);
+border: ridge 1px #B0ADA5;
+}
+
+#secondary {
+clear: right;
+}
+
+.xoxo{
+clear:right;
+list-style:none outside;
+}
+
+.xoxo ul{
+clear:right;
+list-style:outside;
+}
+
+.xoxo ul li{
+clear:both;
+list-style-image:url(../images/arrow.png);
+}
+
+.xoxo ul ul{
+display:none;
+}
+
+.xoxo ul li:hover > ul{
+display:block;
+}
+
+.xoxo ul li a{
+color:fff;
+}
+
+#push {
+height:100px;
+position:relative;	
+clear: both;
+bottom:0;
+}
+
+#footer {
+clear: both;
+height: 100px;
+background-color:#333;
+bottom:0;
+position: relative;
+color:#FFF;
+border-top:2px groove #666;
+background-image:url(../images/Fabric1bl.jpg);
+}
+
+#generator-link a {
+color:#CCC;	
+}
+
+#theme-link a {
+color:#CCC;	
+}
+
+.widget-title {
+Font-family:"Handlee";
+font-size:20px;
+color:#3C5E8F;
+}
+
+.entry-content {
+Font-family:"Mate SC";
+color:#263140;
+}
+
+/*-------------------------POSTS-----------------------*/
+
+#fptop{
+height: 35px;
+border: ridge 1px #eee;
+background-image:url(../images/Fabric1bl.jpg);
+-moz-border-radius: 1em 1em 0em 0em;
+border-radius: 1em 1em 0em 0em; 
+opacity:0.6;
+filter:alpha(opacity=60);
+}
+
+#fptop h2{
+margin-left: 7px;
+}
+
+#fptop:hover{
+background-image:none;
+background-color: #718296;
+}
+
+#fptop a:hover{
+color:#fff;
+}
+
+.entry-title{
+font-family: "Handlee";
+font-size: 26px;
+font-weight: normal;
+}
+
+.post-entry-title{
+font-family: "Handlee";
+font-size: 26px;
+font-weight: normal;
+color: #718296;
+}
+
+.entry-title a{
+color:#E3DCD3;
+}
+
+#fpbottom{
+/*height:10px;
+width:100%;
+-moz-border-radius: 0em 0em 1em 1em;
+border-radius: 0em 0em 1em 1em;
+background-color:#AAA;
+opacity:0.6;
+filter:alpha(opacity=60);*/
+}
+
+#fullpost {
+color: #111;
+font-family:"Mate SC";
+overflow: hidden;
+padding: 10px;
+background-color: #eee;
+border: ridge 1px #ccc;
+-moz-border-radius: 0em 0em 1em 1em;
+border-radius: 0em 0em 1em 1em;
+opacity:0.6;
+filter:alpha(opacity=60);
+}
+
+.entry-meta {
+float:right;
+position:relative;
+margin-right: 7px;
+font-family: "Handlee";
+font-size: 15px;
+margin-top:2px;
+font-weight:normal;
+color:#1C1A17;
+}
+
+.entry-meta-post {
+font-family: "Handlee";
+}
+
+#entry-content{
+}
+
+.sticky {
+}
+
+.bypostauthor {
+}
+
+/*--------------------------------PAGES-----------------------------*/
+
+#extend {
+width:100%;
+height:500px;
+expand:true;	
+}
+
+
+
+
+@media screen and (max-width:320px)
+{
+
+body { overflow-x:hidden; }
+
+img { max-width: 100%; }
+
+#blog-title {
+float: left;
+margin-bottom: 0;
+margin-left: 0;
+left:0px;
+padding-top: 5px;
+}
+
+#blog-title a {
+font-family: "Linden Hill";
+font-size: 150%;
+color: #ccc;
+}
+
+#access {
+position:relative;
+line-height:45px;
+display:block;
+clear:right;
+margin-top:20px;
+margin-left:0px;
+left: 0px;
+float:left;
+width:300px;
+}
+
+#access a {
+position:relative;
+line-height:0px;
+display:inline-block;
+color:#5E6670;
+background-color:none;
+font-family:"Poiret One";
+font-size:15px;
+margin:15px;
+left:0px;
+}
+
+#access .menu-header li, div.menu li {
+width:295px;
+margin-left:0px;
+left:0px;
+display:block;
+clear:right;
+background-image:none;
+background-color:transparent;
+border:none;
+}
+
+#access ul li:hover > ul {
+display: none;
+}
+
+
+.entry-meta {
+display:none;
+}
+
+#container {
+width:95%;
+clear:both;
+margin:0;
+left:auto;
+right:auto;
+margin-left:auto;
+margin-right:auto;
+float:none;
+margin-bottom:20px;
+margin-top:20px;
+}
+
+
+#primary, #secondary {
+float: none;
+clear:both;
+left:auto;
+right:auto;
+margin-left:auto;
+margin-right:auto;
+margin-bottom:30px;
+overflow: hidden;
+position: relative;
+width: 95%;
+margin-bottom:60px;
+margin-top:20px;
+}
+
+.widget-area {
+background-color: #CCC0AF;
+border: 1px ridge #B0ADA5;
+opacity: 0.6;
+}
+
+}
+@media screen and (min-width:321px) and (max-width:900px)
+{
+
+body { overflow-x:hidden; }
+
+img { max-width: 100%; }
+
+#blog-title {
+float: none;
+margin-bottom: 0;
+margin-left: auto;
+margin-right: auto;
+min-width:100%;
+padding-top: 5px;
+}
+
+#blog-title a {
+font-family: "Linden Hill";
+font-size: 150%;
+color: #ccc;
+}
+
+#access {
+position:relative;
+line-height:45px;
+display:block;
+clear:both;
+margin-top:20px;
+left:auto;
+right:auto;
+margin-left:auto;
+margin-right:auto;
+width:540px;
+}
+
+#access a {
+position:relative;
+line-height:0px;
+display:inline-block;
+color:#5E6670;
+background-color:none;
+font-family:"Poiret One";
+font-size:25px;
+margin:15px;
+}
+
+#access .menu-header li, div.menu li {
+width:500px;
+margin-left:auto;
+margin-right:auto;
+display:block;
+clear:both;
+background-image:none;
+background-color:transparent;
+border:none;
+}
+
+#access ul li:hover > ul {
+display: none;
+}
+
+
+.entry-meta {
+display:none;
+}
+
+#container {
+width:95%;
+clear:both;
+margin:0;
+left:auto;
+right:auto;
+margin-left:auto;
+margin-right:auto;
+float:none;
+margin-bottom:20px;
+margin-top:20px;
+}
+
+
+#primary, #secondary {
+float: none;
+clear:both;
+left:auto;
+right:auto;
+margin-left:auto;
+margin-right:auto;
+margin-bottom:30px;
+overflow: hidden;
+position: relative;
+width: 95%;
+margin-bottom:60px;
+margin-top:20px;
+}
+
+.widget-area {
+background-color: #CCC0AF;
+border: 1px ridge #B0ADA5;
+opacity: 0.6;
+}
+
+
+}
+@media screen and (min-width:769px)
+{
+
+
+
+
+}

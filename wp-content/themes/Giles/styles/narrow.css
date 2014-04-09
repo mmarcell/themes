@@ -1,0 +1,145 @@
+/*--------------------------------------MENU/HEADER--------------------------------------------*/
+#header {
+position: relative;	
+top: 0;
+width: 100%;
+height: 35px;
+margin: 0 auto;
+clear: both;
+border-bottom: 2px groove #666;
+text-align: center;
+text-shadow: 0px 1px 0px #000;
+background-image: url(../images/Fabric1bl.jpg);
+z-index: 9999;
+}
+
+#blog-title {
+float: left;
+margin-bottom: 0;
+margin-left: 5px;
+padding-top: 5px;
+}
+
+#blog-title a {
+font-family: "Linden Hill";
+font-size: 150%;
+color: #ccc;
+}
+
+
+#access {
+position:relative;
+line-height:45px;
+left:300px;
+display:inline;
+}
+
+
+.skip-link {
+visibility:hidden;
+left:-9000px;
+}
+
+.menu li:hover {
+background-color:#000000;
+background-image:none;
+}
+
+#access .menu-header ul,
+div.menu ul {
+list-style: none;
+margin-left:10px;
+padding-left:0px;
+padding-right:0px;
+padding-top:0px;
+padding-bottom:0px;
+height:40px;
+position:relative;
+}
+
+#access .menu-header li,
+div.menu li {
+padding-top:0px;
+padding-right:7px;
+padding-left:7px;
+padding-bottom:0px;
+border-left:.5px groove #666;
+border-right:.5px solid #CCC;
+background-color:#333;
+background-image:url(../images/Fabric1bl.jpg);
+float:left;
+position: relative;	
+height: 35px;
+}
+
+#access a {
+display:inline;
+float:none;
+color:#CCC;
+text-shadow: 0px 1px 0px #000;
+font-family:"Annie Use Your Telescope";
+font-size:20px;
+}
+
+#access ul ul {
+
+box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+-moz-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+-webkit-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+display: none;
+position: absolute;
+top: 35px;
+left: 0;
+float: left;
+z-index: 99999;
+margin-left:0px;
+height:auto;
+}
+
+#access ul ul li {
+height:auto;
+background-color:#000;
+background-image:none;
+}
+
+#access ul ul li:hover {
+background:none;
+}
+
+#access ul ul ul {
+left: 100%;
+top: 0;
+}
+
+#access ul ul a {
+background: #424242;
+line-height: 8px;
+padding: 5px;
+width: 190px;
+height: 15px;
+}
+
+#access ul ul a:hover {
+color:#ffffff;
+border-bottom:.25px groove #000;
+border-top:.25px groove #ccc;
+}
+
+#access ul li:hover > ul {
+display: inline;
+}
+
+#access ul li.current_page_item > a,
+#access ul li.current-menu-ancestor > a,
+#access ul li.current-menu-item > a,
+#access ul li.current-menu-parent > a {
+color: #fff;
+}
+
+* html #access ul li.current_page_item a,
+* html #access ul li.current-menu-ancestor a,
+* html #access ul li.current-menu-item a,
+* html #access ul li.current-menu-parent a,
+* html #access ul li a:hover {
+color: #fff;
+}

@@ -1,0 +1,46 @@
+/*
+Theme Name: Volume
+Description: A search engine optimized framework for wordpress
+Author: MJMarcell
+Version: 1.0
+Author URI: https://twitter.com/#!/MJMarcell
+License: GPL 3.0
+License URI: http://www.gnu.org/licenses/gpl.html
+Theme URI:
+Tags:
+*/
+
+
+
+/* Reset default browser styles */
+@import url('styles/reset.css');
+
+/* Rebuild default browser styles*/
+@import url('styles/rebuild.css');
+
+/* Basic WordPress Styles
+@import url('styles/wp.css');
+
+/* Menu Style
+@import url('styles/menu.css');
+
+/*current*/
+@import 'styles/define.css';
+
+/*1colfluid*/
+/*@import url('styles/1c-b.css');*/
+
+/*2colfluidleft*/
+/*@import url('styles/2c-l.css');*/
+
+/*2colfluidright*/
+/*@import url('styles/2c-r.css');*/
+
+/*3colfluid*/
+/*@import url('styles/3c-b.css');*/
+
+/*3colfluidleft*/
+/*@import url('styles/3c-l.css');*/
+
+/*3colfluidright*/
+/*@import url('styles/3c-r.css');*/
