@@ -16,7 +16,28 @@
         <?php endif; ?>
     </header><!-- .entry-header -->
  
-    <?php if ( is_search() ) : // Only display Excerpts for Search ?>
+    <?php if ( in_the_loop() ) : // Only display Excerpts for Loop ?>
+    <div class="entry-summary">
+        <?php if ( has_post_thumbnail() && get_the_excerpt()) : ?>
+            <div class="index-ft">
+            <?php
+              the_post_thumbnail('medium');
+            ?>
+            </div>
+            <div class="index-e">
+            <?php
+              the_excerpt();
+            ?>
+            </div>
+        <?php elseif (get_the_excerpt() && !has_post_thumbnail()) : ?>
+            <?php the_excerpt(); ?>
+        <?php elseif (has_post_thumbnail() && !get_the_excerpt()) : ?>
+        <div class="index-fts">
+            <?php the_post_thumbnail('medium'); ?>
+        </div>
+        <?php endif; ?>
+    </div><!-- .entry-summary -->
+    <?php elseif ( is_search() ) : // Only display Excerpts for Search ?>
     <div class="entry-summary">
         <?php the_excerpt(); ?>
     </div><!-- .entry-summary -->
