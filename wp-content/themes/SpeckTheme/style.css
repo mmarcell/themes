@@ -1,0 +1,364 @@
+/*
+Theme Name: SpeckTheme
+Author: Mylon Marcell
+Description: Theme for the Speck e-commerce page
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+This theme, like WordPress, is licensed under the GPL.
+*/
+@import url(http://fonts.googleapis.com/css?family=Belleza);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700italic);
+@font-face {
+	font-family: 'Conv_AvianoSans';
+	src: url('fonts/AvianoSans.eot');
+	src: local('?'), url('fonts/AvianoSans.woff') format('woff'), url('fonts/AvianoSans.ttf') format('truetype'), url('fonts/AvianoSans.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_Archistico_Simple';
+	src: url('fonts/Archistico_Simple.eot');
+	src: local('?'), url('fonts/Archistico_Simple.woff') format('woff'), url('fonts/Archistico_Simple.ttf') format('truetype'), url('fonts/Archistico_Simple.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_Archistico_Bold';
+	src: url('fonts/Archistico_Bold.eot');
+	src: local('?'), url('fonts/Archistico_Bold.woff') format('woff'), url('fonts/Archistico_Bold.ttf') format('truetype'), url('fonts/Archistico_Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_Santana';
+	src: url('fonts/Santana.eot');
+	src: local('?'), url('fonts/Santana.woff') format('woff'), url('fonts/Santana.ttf') format('truetype'), url('fonts/Santana.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Conv_Fontin-Regular';
+	src: url('fonts/Fontin-Regular.eot');
+	src: local('?'), url('fonts/Fontin-Regular.woff') format('woff'), url('fonts/Fontin-Regular.ttf') format('truetype'), url('fonts/Fontin-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	background-color: #111111;
+}
+/****NAVIGATION****/
+.blog-header {
+	height: 60px;
+	display: block;
+	position: relative; /*overflow:  hidden;
+	*/
+clear: none;
+	-webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	background-color: white; /*background-color:  transparent;
+	
+	background-image:  url("img/bckgrnd.png");
+	*/
+z-index: 99998;
+}
+.blog-menu-title {
+	display: block;
+	position: relative;
+	margin: 0 0 -108px 0;
+	text-indent: -9999px;
+	background-image: url("img/sp_icon_shad.png");
+	height: 167.58px;
+	width: 335.16px;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	top: -15px;
+}
+.blog-title a {
+	text-decoration: none;
+	color: white;
+}
+.blog-branding {
+	float: left;
+	width: 43%;
+	font-size: 40px;
+	overflow: visible;
+}
+.blog-navigation {
+	clear: none;
+	margin-top: 0;
+	float: right;
+	text-align: center;
+	height: 60px;
+	width: 55%;
+	padding-right: 1.0em;
+}
+.menu {
+	height: 60px;
+}
+.blog-navigation ul {
+	list-style: none;
+	margin: 0;
+	float: right;
+}
+.blog-navigation li:hover {
+	background: rgba(180,64,64, 0.5); /*background:  rgba(230, 230, 230, 0.5);
+	*/
+}
+.blog-navigation li {
+	float: left;
+	position: relative;
+	border-right: 3px ridge #9f9f9f;
+	padding: 0px 30px;
+	overflow: visible;
+}
+.blog-navigation ul > :first-child {
+	border-left: 3px ridge #9f9f9f;
+}
+.blog-navigation ul > :last-child {
+	border-right: none;
+}
+.blog-navigation a {
+	display: block;
+	text-decoration: none;
+	color: #111111;
+	font-size: 22px;
+	height: 44px;
+	padding-top: 16px;
+	font-family: Conv_AvianoSans;
+	text-transform: uppercase;
+	text-shadow: 1px 2px 0px #cccccc;
+}
+.blog-navigation ul ul a:hover {
+	background-color: yellow;
+}
+.blog-description {
+	display: none;
+}
+.line-width {
+	position: relative;
+	display: block;
+	width: 100%;
+	background-image: url("img/line1.png");
+	background-repeat: repeat-x;
+	height: 50px;
+	margin-top: 2px;
+}
+/****CONTENT****/
+#blog-content {
+	position: relative;
+	display: block;
+	background-color: #ffffff;
+	background-image: url("img/greygrunge.png");
+	background-repeat: repeat;
+	width: 71.1em;
+	margin: 0 auto;
+	height: auto;
+	overflow: hidden;
+}
+.blog-content-area {
+	position: relative;
+	display: block;
+	background-image: url("img/greygrunge.png");
+	background-repeat: repeat;
+	height: auto;
+	padding-top: 45px;
+	width: 75% !important;
+	padding-right:25%;
+	margin-right:-25% !important;
+}
+
+.blog-main {
+	margin-right:0 !important;
+}
+
+/****BLOG****/
+.entry-date {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	float: left;
+	display: block;
+	position: relative;
+	text-align: center;
+	margin: -10px 15px 0 0px;
+	background-color: #111111;
+	font-size: 24px;
+	font-family: Conv_AvianoSans;
+	color: white;
+	line-height: 10px;
+	text-shadow: 1px 2px 0px #555555;
+	-webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+.entry-title {
+	text-align: left;
+	font-family: 'merriweather' !important;
+	font-style: italic;
+	font-size: 40px;
+	color: #111111 !important;
+	text-decoration: none;
+	text-shadow: 1px 2px 0px #cccccc;
+}
+.entry-title a {
+	font-family: 'merriweather' !important;
+	font-style: italic;
+	font-size: 40px;
+	color: #111111 !important;
+	text-decoration: none;
+	text-shadow: 1px 2px 0px #cccccc;
+}
+.entry-content {
+	font-family: 'conv_fontin-regular';
+	font-size: 24px;
+	color: #111111;
+}
+.hentry {
+	padding: 0px 20px 20px 20px;
+	margin: 20px 20px;
+	background-color: #ffffff;
+	-webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+.hentry a {
+	color: rgb(180,64,64);
+	text-decoration: none;
+	font-family: 'conv_fontin-regular';
+}
+.blog-info {
+	background-color: #cccccc;
+}
+.widget-area {
+	margin-top: 78px;
+	font-family: 'conv_fontin-regular';
+}
+.widget-area li {
+	list-style: none;
+}
+.widget-area a {
+	color: rgb(180,64,64);
+	text-decoration: none;
+}
+.widget {
+	padding: 10px 20px 20px 20px;
+	background-color: #ffffff;
+	margin: 0px 20px 20px 0px;
+	-webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+.blog-footer-bottom {
+	width: 100%;
+	position: relative;
+	display: block;
+	clear: both;
+	height: 135px;
+	background-color: #ffffff;
+	padding-top: 0px;
+}
+.blog-wp-bot {
+	display: block;
+	width: 100%;
+	position: relative;
+	background-color: #111111;
+	text-align: center;
+	padding: 15px;
+	color: rgb(126,126,124);
+}
+#blog-foot-nav {
+	display: block;
+	position: relative;
+	height: 90px;
+	float: right;
+}
+#blog-foot-nav ul {
+	height: 60px;
+	margin: 20px 20px 0px 0px;
+}
+#blog-foot-nav ul li {
+	display: block;
+	float: right;
+	list-style: none;
+	margin: 10px;
+	text-decoration: none;
+	color: #ffffff;
+	font-family: Conv_AvianoSans;
+}
+#blog-foot-nav ul li:after {
+	content: '-';
+	margin-left: 20px;
+	color: rgb(180,64,64);
+}
+#blog-foot-nav ul li:first-child {
+	margin-right: -10px;
+}
+#blog-foot-nav ul li:first-child:after {
+	content: '';
+}
+#blog-foot-nav ul li a {
+	text-decoration: none;
+	color: #111111;
+	font-size: 20px;
+	text-shadow: 1px 2px 0px #eeeeee;
+}
+#blog-foot-nav ul li a:hover {
+	color: rgb(180,64,64);
+}
+#menu-navmenu-1 .menu {
+	height: 50px;
+}
+/****SINGLE****/
+.content-area {
+	padding-top: 45px;
+}
+.post-img {
+	position: relative;
+	display: block;
+	max-width: 100%;
+	max-height: 300px;
+	overflow: hidden;
+	clear: both;
+	margin: 0 auto;
+	padding: 0 0 10px 0;
+}
+.post-img img {
+	margin: 0 auto;
+	display: block;
+	vertical-align: middle;
+}
+.single-entry-title {
+	position: relative;
+	display: block;
+	text-align: center;
+	font-family: 'merriweather' !important;
+	font-style: italic;
+	font-size: 40px;
+	color: #111111 !important;
+	text-decoration: none;
+	text-shadow: 1px 2px 0px #cccccc;
+}
+.single-entry-date {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	float: left;
+	display: block;
+	position: relative;
+	text-align: center;
+	margin: -10px 15px 0 0px;
+	background-color: #111111;
+	font-size: 24px;
+	font-family: Conv_AvianoSans;
+	color: white;
+	line-height: 10px;
+	text-shadow: 1px 2px 0px #555555;
+	-webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+	margin-right: -100px;
+}

@@ -1,0 +1,117 @@
+/*
+ Theme Name:     Exposure
+ Theme URI:      http://example.com/exposure/
+ Description:    _s Child Theme
+ Author:         Mylon Marcell
+ Author URI:     http://example.com
+ Template:       _s-master
+ Version:        1.0.0
+*/
+
+@import url("../_s-master/style.css");
+
+/* =Menu
+----------------------------------------------- */
+
+.site-header {
+	height: 60px;
+	display: block;
+	/*overflow: hidden;*/
+        clear: none;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	
+	background-color:pink;
+}
+
+.site-title {
+	padding-left: 0.5em;	
+}
+
+.site-branding {
+	float: left;
+	width: 39%;
+	font-size: 40px;
+}
+
+.main-navigation {
+        clear: none !important;
+	margin-top: 5px;
+	float: right !important;
+	text-align: center;
+	height: 42px !important;
+	width: 59%;
+	padding-right: 1.0em;
+}
+
+.main-navigation ul {
+	list-style: none;
+	margin: 0;
+	float: right;
+}
+
+.main-navigation li {
+	float: left;
+	position: relative;
+	
+	border-right: 2px solid rgb(151, 151, 151);
+	padding: 10px 20px;
+}
+
+.main-navigation a {
+	display: block;
+	text-decoration: none;
+}
+
+.main-navigation ul ul {
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	display: none;
+	float: left;
+	position: absolute;
+	top: 1.5em;
+	z-index: 99999;
+	background-color: white;
+	width: 200px;
+	margin-left: -65px;
+
+	border: 1px solid rgba( 0, 0, 0, 0.1 );
+}
+
+.main-navigation ul ul ul {
+	display: none;
+}
+
+.main-navigation ul ul a {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.main-navigation ul ul li {
+	
+	padding: 0;
+	display: block;
+	float: left;
+	min-width: 100%;
+	border: none;
+	text-align: center;
+}
+
+.main-navigation li:hover > a {
+}
+.main-navigation ul ul :hover > a {
+}
+
+.main-navigation ul ul a:hover {
+	background-color: yellow;
+}
+
+.main-navigation ul li:hover > ul {
+	display: block;	
+	top: 40px;
+}
+
+.main-navigation ul ul li:hover > ul {	
+	top: 0;
+	display: none;
+}

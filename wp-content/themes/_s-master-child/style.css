@@ -1,0 +1,445 @@
+/*
+ Theme Name:     Holly's Theme
+ Theme URI:      http://example.com/exposure/
+ Description:    _s Child Theme
+ Author:         Mylon Marcell
+ Author URI:     http://example.com
+ Template:       _s-master
+ Version:        1.0.0
+*/
+
+@import url("../_s-master/layouts/content-sidebar.css");
+@import url("../_s-master/style.css");
+@import url(http://fonts.googleapis.com/css?family=Ruluko);
+@import url(http://fonts.googleapis.com/css?family=Fanwood+Text);
+
+a {
+	color: #bdcc33;
+}
+
+a:visited {
+	color: #D172FB;
+}
+
+body {
+	/*background-color:#FEFFE9;*/
+	background-image: url("img/bg-final.png") !important;
+	background: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+/* =Menu
+----------------------------------------------- */
+
+.site-header {
+	height: 5em;
+	display: block;
+	position:relative;
+	/*overflow: hidden;*/
+        clear: none;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	background-color:#FEFFE9;
+	z-index:99998;
+}
+
+.site-title {
+	margin-left: 0.5em;
+	margin-top: 0.5em;
+	text-indent: -9999px;
+	background-image: url("img/LifeShotsByHolly_Logo.png");
+	height: 40px;
+	width: 500px;
+	background-repeat: no-repeat;
+}
+
+.site-title a {
+	text-decoration: none;
+}
+
+.site-branding {
+	float: left;
+	width: 39%;
+	font-size: 40px;
+}
+
+.main-navigation {
+        clear: none;
+	margin-top: 1.0em;
+	float: right;
+	text-align: center;
+	height: 42px;
+	width: 59%;
+	padding-right: 1.0em;
+}
+
+.main-navigation ul {
+	list-style: none;
+	margin: 0;
+	float: right;
+}
+
+.main-navigation li {
+	float: left;
+	position: relative;
+	border-right: 2px solid rgb(151, 151, 151);
+	padding: 0px 20px;
+	overflow: visible;
+}
+
+.main-navigation ul > :last-child {
+	border-right: none;	
+}
+
+.main-navigation a {
+	display: block;
+	text-decoration: none;
+	color: #bdcc33;
+	font-family: "Ruluko";
+	font-size: 19px;
+	height: 40px;
+	padding-top: 10px;
+}
+
+.main-navigation ul ul {
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	display: none;
+	float: left;
+	position: absolute;
+	top: 1.5em;
+	z-index: 99999;
+	background-color: white;
+	width: 200px;
+	margin-left: -65px;
+	border: 1px solid rgba( 0, 0, 0, 0.1 );
+}
+
+.main-navigation ul ul ul {
+	display: none;
+}
+
+.main-navigation ul ul a {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.main-navigation ul ul li {
+	padding: 0;
+	display: block;
+	float: left;
+	min-width: 100%;
+	border: none;
+	text-align: center;
+}
+
+.main-navigation li:hover > a {
+	background-image: url("img/shutter.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	color: black;
+	background-size: auto;
+}
+
+.main-navigation ul ul :hover > a {
+}
+
+.main-navigation ul ul a:hover {
+	background-color: yellow;
+}
+
+.main-navigation ul li:hover > ul {
+	display: block;	
+	top: 40px;
+}
+
+.main-navigation ul ul li:hover > ul {	
+	top: 0;
+	display: none;
+}
+
+.sub-head {
+	min-height: 10px;
+	display: block;
+	position: relative;
+	clear: both;
+	background-color: #bdcc33;
+	z-index:9998;
+}
+
+.sub-head-border {
+	min-height: 10px;
+	display: block;
+	position: relative;
+	clear: both;
+	background-color:rgb(165,127,168);
+	/*background-color: #fffedf;*/
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	z-index:9999;
+}
+
+/* =Body
+----------------------------------------------- */
+
+.site-content a {
+	color: rgb(165,127,168);
+}
+
+.site-content {
+	font-family: "Fanwood Text";
+}
+
+.content-area {
+	float: left;
+	margin: 0 -40% 0 0;
+	width: 100%;
+	/*background-color: #f3d8ff;*/
+}
+
+.site-main {
+	margin: 0 40% 0 15%;
+	background-color: transparent !important;
+	width: 40%;
+	/*box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);*/
+}
+
+.widget-area {
+	width: 25% !important;
+	margin-right: 15% !important;
+	padding-top: 40px;
+	background-color: transparent !important;
+}
+
+.widget-area li, a {
+	list-style: none;
+	text-decoration:none;
+}
+
+.widget-area h1 {
+	font-size: 20px;
+	color: #555555;
+}
+
+.widget {
+	padding-left: 20px;
+}
+
+.hentry {
+	display: block;
+	position: relative;
+	clear:both;
+	width:100%;
+	padding: 1.5em;
+	overflow: hidden;
+}
+
+.entry-content {
+	float:right;
+	width:60%;
+	margin:0 0 0 1%;
+}
+
+.entry-content p {
+	font-size:18px;
+	padding-top:10px;
+	color: #555555;
+}
+
+.entry-title {
+	font-size: 30px;
+	font-family: "Fanwood Text";
+	border-bottom: double rgb(165,127,168);
+}
+
+.entry-title a, h1 {
+	text-decoration: none;
+	color: rgb(165,127,168);
+}
+
+.admin-link {
+	float:right;
+}
+
+.post-side {
+	float:left;
+	width:35%;
+	clear:both;
+	margin-right:1%;
+	margin-top:50px;
+}
+
+.post-side img {
+	border: solid 4px rgb(165,127,168);
+}
+
+.single-side {
+	float:left;
+	width:35%;
+	clear:both;
+	margin-right:1%;
+	margin-top:10px;
+}
+
+.single-side img {
+	border: solid 4px rgb(165,127,168);
+}
+
+.single-post {
+	width:100%;
+	padding-top:10px;
+	font-size: 18px;
+}
+
+.single-meta {
+	float:left;
+	width: 40%;
+	display:inline;
+	margin: 0 20px 20px 0;
+}
+
+.single-meta img {
+	border: solid 4px rgb(165,127,168);
+	width:100%;
+}
+
+.single-meta span {
+	font-size: 14px;
+}
+
+.single-content {
+	width:100%;
+	display:inline;
+}
+
+.site-footer {
+	position:relative;
+	display:block;
+	clear: both;
+	width: 100%;
+	background-color: #fffedf;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+	border-top: groove 2px rgba(0, 0, 0, 0.3);
+	height:80px;
+	z-index:9999;
+}
+
+.footer {
+	width:100%;
+	height:100%;
+	display:block;
+	position:relative;
+	background: url("img/footer.png") no-repeat;
+	background-position: center;
+}
+
+.like-box {
+	display:block;
+	position:relative;
+	float:right;
+	color: #bdcc33;
+	font-family: "Ruluko";
+	font-size: 19px;
+}
+
+.social {
+	display:block;
+	position:relative;
+	float:right;
+	color: #bdcc33;
+	font-family: "Ruluko";
+	font-size: 19px;
+}
+
+.find {
+	display:block;
+	position:relative;
+	float:left;
+	padding-top:25px;
+}
+
+.like {
+	display:block;
+	position:relative;
+	float:left;
+	padding-top:25px;
+}
+
+.fb-icon {
+	display:block;
+	position:relative;
+	float:right;
+	width:50px;
+	height:50px;
+	background: url("img/Facebookicon.png") no-repeat;
+	background-size:100% 100%;
+	margin: 15px 10px;
+}
+
+.like-icon {
+	display:block;
+	position:relative;
+	float:right;
+	width:50px;
+	height:50px;
+	background: url("img/Like.png") no-repeat;
+	background-size:100% 100%;
+	margin: 15px 10px;
+}
+
+.menu-bot {
+	display:block;
+	position:relative;
+	float:left;
+}
+
+.site-info {
+	height:25px;
+	display:block;
+	position:relative;
+	text-align:center;
+	width:100%;
+	background-color:white;
+}
+
+/* =Slider
+----------------------------------------------- */
+#slider {
+	position: relative;
+	display: block;
+	width: 1024px;
+	max-height: 100%;
+	margin:0 auto;
+	z-index: 1000;
+}
+
+.flexslider {
+	padding:0 !important;
+	margin:0 !important;
+	border:0 !important;
+}
+
+.flexslider .slides img {
+	height: 100% !important;
+}
+
+.flex-viewport {
+	max-height: 800px !important;
+	width:100%;
+	height: 600px;
+	overflow: hidden;
+}
+
+.flex-slider-border {
+	padding:0px !important;
+}
+
+.flex-direction-nav .flex-next {
+	background-position: 100% 0;
+	right: -36px;
+}
+
+.flex-direction-nav .flex-prev {
+	left: -36px;
+}

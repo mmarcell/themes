@@ -4,8 +4,8 @@
  *
  * Displays the <head> section of HTML
  *
- * @package Theme
- * @since Theme 2.0
+ * @package Elements
+ * @since Elements 1.0
  */
 ?>
 
@@ -63,6 +63,10 @@ echo ' | ' . sprintf(__( 'Page %s', 'theme'), max($paged, $page));
 <link href='http://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Radley' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Gilda+Display' rel='stylesheet' type='text/css'>
 </head>
 
 <!-- ADDS BODY CLASSES -->

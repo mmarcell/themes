@@ -8,8 +8,8 @@
  * E.g., it puts together the home page when no home.php file exists.
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package Theme
- * @since Theme 1.0
+ * @package Elements
+ * @since Elements 1.0
  */
 ?>
 

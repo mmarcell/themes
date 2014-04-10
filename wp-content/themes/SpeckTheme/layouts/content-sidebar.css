@@ -1,0 +1,27 @@
+/*
+Theme Name: SpeckTheme
+Layout: Content-Sidebar
+*/
+
+.blog-content-area {
+	float: left;
+	position:relative;
+	margin: 0 -25% 0 0;
+	width:100%;
+}
+.blog-main {
+	margin: 0 25% 0 0;
+	position:relative;
+	height:auto;
+}
+.blog-content .widget-area {
+	float: right;
+	position:relative;
+	overflow: hidden;
+	width: 25%;
+}
+.blog-footer {
+	position:relative;
+	clear: both;
+	width: 100%;
+}

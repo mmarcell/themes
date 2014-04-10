@@ -1,0 +1,323 @@
+/*
+ Theme Name:     Holly's Mobile Theme
+ Theme URI:      http://example.com/exposure/
+ Description:    _s Child Theme
+ Author:         Mylon Marcell
+ Author URI:     http://example.com
+ Template:       _s-master
+ Version:        1.0.0
+*/
+
+@import url("../_s-master/layouts/content-sidebar.css");
+@import url("../_s-master/style.css");
+@import url(http://fonts.googleapis.com/css?family=Ruluko);
+@import url(http://fonts.googleapis.com/css?family=Fanwood+Text);
+
+a{
+color: #bdcc33;
+}
+a:visited{
+color:#D172FB;
+}
+
+html {
+	margin-top:0px !important;
+}
+html, body{
+margin:0;
+max-width:100%;
+overflow:hidden;
+background-color:white;
+}
+
+body{
+/*background-color:#FEFF*/
+background-color:#FEFFE9;
+*/
+	background-image:url("img/bg-final.png") !important;
+background:no-repeat;
+background-position:center;
+background-attachment:fixed;
+/*background-size*/
+-webkit-background-size:100% 100%;
+   -moz-background-size:100% 100%;
+     -o-background-size:100% 100%;
+        background-size:100% 100%;
+}
+/* =Menu
+----------------------------------------------- */
+
+.main-navigation{
+clear:both;
+text-align:center;
+height:auto;
+width:100%;
+display:block;
+overflow:hidden;
+background-color:#c1a6c3;
+}
+.main-navigation ul{
+clear:both;
+list-style:none;
+margin:0;
+float:none;
+display:block;
+}
+.main-navigation li{
+float:none;
+position:relative;
+padding:0px;
+}
+.main-navigation a{
+display:block;
+text-decoration:none;
+color:#ad4eb4;
+font-family:"Ruluko";
+font-size:19px;
+height:40px;
+padding-top:10px;
+}
+.main-navigation ul ul{
+display:none;
+}
+.main-navigation ul ul ul{
+display:none;
+}
+.main-navigation li:hover > a{
+background-image:url("img/shutter.png");
+background-repeat:no-repeat;
+background-position:center;
+color:black;
+/*background-size*/
+-webkit-background-size:auto;
+   -moz-background-size:auto;
+     -o-background-size:auto;
+        background-size:auto;
+}
+.sub-head{
+min-height:10px;
+display:block;
+position:relative;
+clear:both;
+background-color:#bdcc33;
+z-index:9998;
+}
+.sub-head-border{
+min-height:10px;
+display:block;
+position:relative;
+clear:both;
+background-color:rgb(165,127,168);
+/*background-color: #ff*/
+/*background-color:#fffedf;
+*/
+	box-shadow:0 3px 3px rgba(0, 0, 0, 0.2);
+z-index:9999;
+}
+/* =Slider
+----------------------------------------------- */
+#slider{
+display:block;
+max-width:1024px;
+max-height:400px;
+margin:0 auto;
+z-index:1000;
+}
+.flexslider{
+padding:0 !important;
+margin:0 !important;
+border:0 !important;
+}
+.flexslider .slides img{
+max-height:100% !important;
+}
+.flex-viewport{
+display:block;
+max-height:400px !important;
+width:100%;
+overflow:hidden;
+}
+.flex-slider-border{
+padding:0px !important;
+}
+.flex-direction-nav .flex-next{
+background-position:100% 0;
+right:-36px;
+}
+.flex-direction-nav .flex-prev{
+left:-36px;
+}
+
+
+
+.site-header{
+height:auto;
+display:block;
+position:relative;
+overflow:hidden;
+/*box-shadow*/
+-webkit-box-shadow:0 3px 3px rgba(0, 0, 0, 0.2);
+   -moz-box-shadow:0 3px 3px rgba(0, 0, 0, 0.2);
+        box-shadow:0 3px 3px rgba(0, 0, 0, 0.2);
+background-color:#FEFFE9;
+z-index:99998;
+}
+.site-title{
+display:none;
+}
+.site-logo {
+margin:10px 10px 10px 10px;
+background-image:url("img/LifeShotsByHolly_Logo.png");
+height: 50px;
+max-width:1024px;
+background-repeat:no-repeat;
+/*background-size*/
+-webkit-background-size:/*@@prefixmycss->No equivalent*/;
+   -moz-background-size:contain;
+     -o-background-size:/*@@prefixmycss->No equivalent*/;
+        background-size:contain;
+background-position:center;
+}
+
+.footer{
+width:100%;
+height:100%;
+display:block;
+position:relative;
+background:url("img/footer.png") no-repeat;
+background-position:center;
+/*background-size*/
+-webkit-background-size:/*@@prefixmycss->No equivalent*/;
+   -moz-background-size:contain;
+     -o-background-size:/*@@prefixmycss->No equivalent*/;
+        background-size:contain;
+}
+.site-footer{
+position:relative;
+display:block;
+clear:both;
+width:100%;
+background-color:#fffedf;
+/*box-shadow*/
+-webkit-box-shadow:3px 3px 3px rgba(0, 0, 0, 0.2);
+   -moz-box-shadow:3px 3px 3px rgba(0, 0, 0, 0.2);
+        box-shadow:3px 3px 3px rgba(0, 0, 0, 0.2);
+height:40px;
+z-index:9999;
+}
+.hentry{
+display:block;
+position:relative;
+clear:both;
+width:100%;
+padding:0;
+margin:0;
+overflow:hidden;
+}
+.entry-content{
+padding:10px;
+}
+.post-side{
+width:100%;
+padding:10px;
+}
+.post-side img{
+width:100%;
+margin-left:-10px;
+}
+.site-main{
+margin:0 0 0 0;
+background-color:#fdfcea !important;
+width:100%;
+clear:both;
+}
+.content-area{
+margin:0 !important;
+}
+.widget-area{
+width:100% !important;
+margin:0 !important;
+background-color:#fdfcea !important;
+}
+.widget{
+padding:0 10px 0 10px;
+}
+.widget ul{
+list-style:none;
+}
+.entry-title{
+font-size:24px;
+text-align:center;
+}
+.single-meta img{
+width:100%;
+}
+.single-post p{
+padding:0 10px 0 10px;
+}
+.comments-area{
+padding:0 10px 0 10px;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px){
+/* Styles */
+}
+
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px){
+/* Styles */
+;
+}
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px){
+/* Styles */
+;
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px){
+/* Styles */
+;
+}
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape){
+/* Styles */
+;
+}
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait){
+/* Styles */
+;
+}
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px){
+/* Styles */
+;
+}
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px){
+/* Styles */
+;
+}
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5){
+/* Styles */
+;
+}
